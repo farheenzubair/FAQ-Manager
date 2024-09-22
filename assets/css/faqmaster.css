@@ -1,0 +1,101 @@
+/* Accordion Header Styling */
+.faq-accordion h4 
+{
+    cursor: pointer;
+    background-color: #f0f0f0;  
+    color: #333; 
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;  
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect on Accordion Header */
+.faq-accordion h4:hover 
+{
+    background-color: #e0e0e0;  
+}
+
+/* Accordion Content Styling */
+.faq-accordion div 
+{
+    display: none;
+    background-color: #fff;  
+    padding: 15px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.6;  
+    color: #555;  
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  
+}
+
+/* Accordion Container Styling */
+.faq-accordion 
+{
+    width: 100%;
+    max-width: 800px;  
+    margin: 0 auto;    
+    border-radius: 5px;
+    overflow: hidden;  
+}
+
+/* Icon Before the Question Text */
+.faq-accordion h4::before 
+{
+    content: '\25BA';  
+    margin-right: 10px;
+    color: #999;
+    transition: transform 0.3s ease; 
+}
+
+/* Open Accordion Arrow Rotation */
+.faq-accordion h4.active::before 
+{
+    transform: rotate(90deg);  
+}
+
+/* Adding Like/Dislike Button Styling */
+.like-button, .dislike-button 
+{
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Like Button Styling */
+.like-button {
+    background-color: #f0f0f0;
+    color: #28a745; 
+    border-color: #28a745;
+}
+
+/* Dislike Button Styling */
+.dislike-button 
+{
+    background-color: #f0f0f0;
+    color: #332325;  
+    border-color: #332325;
+}
+
+/* Hover Effect for Like Button */
+.like-button:hover 
+{
+    background-color: #3e4840;
+    color: #fff;
+}
+
+/* Hover Effect for Dislike Button */
+.dislike-button:hover 
+{
+    background-color: #332325;
+    color: #fff;
+}
